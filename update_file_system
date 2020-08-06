@@ -1,0 +1,34 @@
+import os.path, time
+from datetime import datetime
+
+
+# import os
+#
+# arquivo = os.listdir()
+# #for i in arquivo:
+#  #   if i in "heranca.py":
+#   #      os.remove(i)
+#    #     print(i)
+#
+# deletar = ["arquivo1","arquivo2","arquivo3","arquivo4"]
+# for arquivos in arquivo:
+#     for conjuntos in range(len(deletar)):
+#         if deletar[conjuntos] in arquivo:
+#             print(f"DELETADOS : {os.remove(deletar[conjuntos])}")
+#     break
+
+
+
+pasta1 = "/home/jfc-me/Documentos/devs/MuitosTestes/pasta1/"
+artefatoData = datetime.now()
+
+for i in os.listdir(pasta1):
+     arquivo = f"{pasta1}{i}"
+     data = int(time.ctime(os.path.getmtime(arquivo))[9:11])
+     deletado = i
+     if data != int(f"{artefatoData.day}"):
+          os.remove(arquivo)
+          print("ARQUIVO DELETADO : %s"%i)
+     else:
+          print("ARQUIVO MANTIDO : %s"%i)
+
