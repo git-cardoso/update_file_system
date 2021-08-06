@@ -7,5 +7,5 @@ Codigo remove arquivo do dia anterior.
 
 
 
-![](https://img.shields.io/badge/python-3.9-informational?style=flat&logoColor=white&color=blue)
+![](https://img.shields.io/badge/python-3.9-informational?style=flat&logoColor=white&color=blue) ![GitHub](https://img.shields.io/badge/licence-GPL%203%200-GREE) 
 
